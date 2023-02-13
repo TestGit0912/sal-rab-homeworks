@@ -18,23 +18,11 @@ function calcShipping(sum, min, shipping) {
 
     let shippingSum;
 
-    if(productsSum === 0){
+    if(productsSum === 0) shippingSum = 0;
 
-        shippingSum = 0
-    }
+    if(productsSum  >= freeShippingMinSum) shippingSum = 0;
 
-    if(productsSum  >= freeShippingMinSum){
-
-        shippingSum = 0
-    }
-
-    if(productsSum > 0 && productsSum < freeShippingMinSum){
-
-        shippingSum = shippingPrice
-
-    }
-
-    
+    if(productsSum > 0 && productsSum < freeShippingMinSum) shippingSum = shippingPrice;    
 
     // Конец решения задания №2.1.
 
