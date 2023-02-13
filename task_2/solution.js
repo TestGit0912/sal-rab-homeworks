@@ -81,7 +81,7 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
 
     totalSum = productsSum;
 
-    totalSum = totalSum - discountSum;
+    totalSum += discountSum;
 
     totalSum = totalSum + shippingSum;
 
