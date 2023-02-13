@@ -16,6 +16,12 @@ function addInCartMessage(title, price) {
 
     // Конец решения задания №1.1.
 
+    let message;
+        message = productName;
+        message = message + ' ' + 'за' + ' ' + productPrice + ' ' + 'теперь в корзине!';
+
+        console.log(message);
+
     return message;
 }
 
@@ -29,6 +35,10 @@ function addInCartCountChange(value) {
     // увеличьте значение newValue на 1
 
     // Конец решения задания №1.2.
+
+    let newValue;
+        newValue = oldValue;
+        newValue = newValue + 1;
 
     return newValue;
 }
@@ -45,6 +55,10 @@ function addInCartSumChange(sum, delta) {
 
     // Конец решения задания №1.3.
 
+    let newSum = oldSum + difference;
+
+    let newSumText = newSum + ' ₽';
+    newSumText = `${newSumText}`;
+
     return newSumText;
 }
-
