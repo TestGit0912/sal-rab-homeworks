@@ -79,15 +79,15 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
 
     let totalSum;
 
-    totalSum === productsSum;
+    totalSum = productsSum;
 
-    totalSum === totalSum - discountSum;
+    totalSum = totalSum - discountSum;
 
-    totalSum === totalSum + shippingSum;
+    totalSum = totalSum + shippingSum;
 
     let freeShipping;
 
-    freeShipping = !Boolean(shippingSum);
+    freeShipping = !Boolean("shippingSum");
 
     // Конец решения задачи №2.3.
 
