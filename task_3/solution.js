@@ -33,7 +33,7 @@ function renderCartItem(item) {
 
     itemCountText += " Р= ";
 
-    const sum = product.count * product.price;
+    let sum = product.count * product.price;
 
     itemCountText += sum;
 
