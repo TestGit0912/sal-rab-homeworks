@@ -25,19 +25,19 @@ function renderCartItem(item) {
 
     let itemCountText = "";
 
-    itemCountText += product.count;
+    itemCountText = itemCountText + product.count;
 
-    itemCountText += " х ";
+    itemCountText = itemCountText + " х ";
 
-    itemCountText += product.price;
+    itemCountText = itemCountText + product.price;
 
-    itemCountText += " Р= ";
+    itemCountText = itemCountText + " Р= ";
 
     let sum = product.count * product.price;
 
-    itemCountText += sum;
+    itemCountText = itemCountText + sum;
 
-    itemCountText += " Р";
+    itemCountText = itemCountText + " Р";
 
     // Конец решения задания №3.1.
 
