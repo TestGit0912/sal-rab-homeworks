@@ -23,5 +23,6 @@ length = products.length;
 // Напишите цикл, в котором перебираете все products от 0 до (length - 1)
 // и выполняете addProduct с каждым элементом массива products (передавая элемент массива как аргумент)
 for(products = 0; products < length - 1; products ++){
-    addProduct( products);
+    addProduct( products[i]);
 }
+
