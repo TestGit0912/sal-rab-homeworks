@@ -9,7 +9,7 @@ function parseProducts(json) {
       let data = JSON.parse(json);
       let products = data.products;
 
-       return data(products);
+       return data.products;
    
 }
 
