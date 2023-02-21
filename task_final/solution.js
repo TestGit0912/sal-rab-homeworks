@@ -54,5 +54,5 @@ function sendRequest(name, phone, address, goods, sum) {
         sum: sum,
     }
 
-    return JSON.stringify({data: data});
+    return JSON.stringify({data});
 }
