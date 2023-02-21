@@ -37,9 +37,9 @@
 
 function sendRequest(name, phone, address, goods, sum) {
 
-    let address = {street: " Ильинская" , House: " 54" , entrance: " 3 подъезд" , floor: " 3 этаж" , flat: "57"};
+    // let address = {street: " Ильинская" , House: " 54" , entrance: " 3 подъезд" , floor: " 3 этаж" , flat: "57"};
 
-    let data = {client: "Петр +7(950)750-45-89", order: {address , sum: 2500}, goods: [{title: "Чебуреки", count: 25}]};
+    let data = {client: "Петр +7(950)750-45-89", order: {address: " ул. Ильинская, дом 34, 3 подъезд, 4 этаж, кв. 34" , sum: 2500}, goods: [{title: "Чебуреки"}, {count: 25}]};
 
     let countOfGoods = goods.length;
 
