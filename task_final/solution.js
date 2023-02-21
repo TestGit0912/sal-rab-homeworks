@@ -6,8 +6,8 @@
 // - список товаров в заказе
 // - стоимость заказа с учетом скидок и доставки
 // Как результат функции требуется вернуть JSON,
-
 // cформированный в соответствии с правилами:
+
 // Объект data содержит все данные
 
 // В объекте data есть свойства:
@@ -49,7 +49,8 @@ function sendRequest(name, phone, address, goods, sum) {
     }
 
     data.order = {
-        address: `ул. ${address.street}, дом ${address.house}, ${address.entrance} подъезд, ${address.floor} этаж, кв. ${address.flat}`,
+        address: `ул. ${address.street}, дом ${address.house}, 
+        ${address.entrance} подъезд, ${address.floor} этаж, кв. ${address.flat}`,
         sum: sum,
     }
 
