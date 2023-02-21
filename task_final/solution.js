@@ -33,8 +33,19 @@
 //    }
 // }
 
+
+
 function sendRequest(name, phone, address, goods, sum) {
-    let data = {goods: [], order: {}};
+
+    let address{
+        street: " ул. Ильинская";
+        House: " дом 2";
+        entrance: " 2 подъезд";
+        floor: " 3 этаж";
+        flat: " кв. 53"
+    }
+
+    let data = {client: "Петр +7(950)750-45-89", order: {address , sum: 2500}, goods: [{title: "Чебуреки", count: 25}]};
 
     let countOfGoods = goods.length;
 
