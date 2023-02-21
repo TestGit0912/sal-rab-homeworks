@@ -75,5 +75,5 @@ function sendRequest(name, phone, address, goods, sum) {
         sum: sum,
     }
     let jsonData = JSON.stringify(data);
-    return json              //JSON.stringify({data: data});
+    return JSON           //JSON.stringify({data: data});
 }
