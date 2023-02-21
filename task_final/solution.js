@@ -68,12 +68,12 @@ function sendRequest(name, phone, address, goods, sum) {
     data.client = `${name} ${phone}`;
 
     for (let i = 0; i < countOfGoods; i++) {
-        data.goods.push({title: goods[i].title,count: goods[i].count });
+        data.goods.push({title: goods[i].title, count: goods[i].count });
     }
     data.order = {
         address: `ул. ${address.street}, дом ${address.house}, ${address.entrance} подъезд, ${address.floor} этаж, кв. ${address.flat}`,
         sum: sum,
     }
-
-    return JSON.stringify({data: data});
+    let jsonData = JSON.stringify(data);
+    return jsonData               //JSON.stringify({data: data});
 }
