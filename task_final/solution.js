@@ -37,7 +37,7 @@
 
 function sendRequest(name, phone, address, goods, sum) {
 
-    let address = {street , House , entrance , floor , flat};
+    let address = {street: " Ильинская" , House: " 54" , entrance: " 3 подъезд" , floor: " 3 этаж" , flat: "57"};
 
     let data = {client: "Петр +7(950)750-45-89", order: {address , sum: 2500}, goods: [{title: "Чебуреки", count: 25}]};
 
