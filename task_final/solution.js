@@ -58,5 +58,5 @@ function sendRequest(name, phone, address, goods, sum) {
 
     let jsonData = JSON.stringify(data);
 
-    return JSON;
+    return jsonData;
 }
