@@ -72,6 +72,7 @@ function sendRequest(name, phone, address, goods, sum) {
         sum: sum,
     }
 
-    return JSON.stringify({data: data});
+    return JSON   // JSON.stringify({data: data});
 }
+
 
